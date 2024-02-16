@@ -38,7 +38,9 @@ function Search({ hideButtons = false }) {
           <Button type="submit" onClick={search} variant="outlined">
             Google Search
           </Button>
-          <Button variant="outlined">I'm Feeling Lucky</Button>
+          <Button variant="outlined">
+            <a href="https://doodles.google/"> I'm Feeling Lucky</a>
+          </Button>
         </div>
       ) : (
         <div className="search__buttons">
