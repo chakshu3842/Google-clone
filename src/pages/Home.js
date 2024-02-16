@@ -1,6 +1,5 @@
 import React from "react";
 import "./Home.css";
-import { Link } from "react-router-dom";
 import AppsIcon from "@mui/icons-material/Apps";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import Search from "./Search";
@@ -9,12 +8,12 @@ function Home() {
     <div className="home">
       <div className="home__header">
         <div className="home__headerLeft">
-          <Link to="/about">About</Link>
-          <Link to="/store">Store</Link>
+          <a href="https://about.google/">About</a>
+          <a href="https://store.google.com/?pli=1&hl=en-GB">Store</a>
         </div>
         <div className="home__headerRight">
-          <Link to="/gmail">Gmail</Link>
-          <Link to="/Images">Images</Link>
+          <a href="https://mail.google.com/mail/u/0/?pli=1#inbox">Gmail</a>
+          <a href="https://www.google.com.pe/imghp">Images</a>
           <AppsIcon />
           <AccountCircleIcon />
         </div>
@@ -28,6 +27,25 @@ function Home() {
         />
         <div className="home__inputContainer">
           <Search />
+        </div>
+      </div>
+      <div className="home__footer">
+        <div className="home__footerLeft">
+          <a href="https://about.google/">About</a>
+          <a href="https://ads.google.com/intl/en_IN/home/">Advertising</a>
+          <a href="https://smallbusiness.withgoogle.com/#!/">Business</a>
+          <a href="https://www.google.com/search/howsearchworks/">
+            How search works
+          </a>
+        </div>
+        <div className="homefooterRight">
+          <a href="https://policies.google.com/privacy?hl=en-IN&fg=1">
+            Privacy
+          </a>
+          <a href="https://policies.google.com/terms?hl=en-IN&fg=1">Terms</a>
+          <a href="https://www.google.com/preferences?hl=en-IN&fg=1">
+            Settings
+          </a>
         </div>
       </div>
     </div>

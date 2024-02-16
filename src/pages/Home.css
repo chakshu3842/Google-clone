@@ -50,3 +50,34 @@
   object-fit: contain;
   height: 100px;
 }
+
+.home__footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  align-items: center;
+}
+
+.home__footer a {
+  text-decoration: inherit;
+  margin-right: 20px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 15px;
+}
+
+.home__footer a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.home__footerLeft {
+  display: flex;
+  align-items: center;
+}
+
+.home__footerRight {
+  display: flex;
+  align-items: center;
+  min-width: 13vw;
+  justify-content: space-between;
+}
