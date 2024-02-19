@@ -29,6 +29,7 @@ function Home() {
           <Search />
         </div>
       </div>
+      <div className="upper__footer">India</div>
       <div className="home__footer">
         <div className="home__footerLeft">
           <a href="https://about.google/">About</a>

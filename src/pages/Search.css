@@ -2,13 +2,18 @@
   display: flex;
   align-items: center;
   border: 1px solid lightgray;
-  height: 30px;
+  height: 25px;
   padding: 10px 20px;
   border-radius: 999px;
   width: 75vw;
   margin: 0 auto;
   margin-top: 40px;
   max-width: 560px;
+  transition: box-shadow 0.3s ease;
+}
+
+.search__input:hover {
+  box-shadow: 0px 0px 10px 0px #c6c6c6;
 }
 
 .search__input > input {
@@ -27,18 +32,19 @@
 }
 
 .search__buttons {
-  margin-top: 30px;
+  margin-top: 25px;
   display: flex;
   justify-content: center;
 }
 
 .search__buttons button {
-  padding: 7px 15px;
+  padding: 5px 15px;
   margin: 5px;
   background-color: #f8f8f8;
   border: 1px solid white;
   text-transform: inherit;
-  color: #5f6368;
+  color: #222;
+  font-family: Arial, sans-serif;
   text-decoration: none;
 }
 
