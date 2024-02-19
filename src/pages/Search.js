@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Search.css";
 import SearchIcon from "@mui/icons-material/Search";
 import MicIcon from "@mui/icons-material/Mic";
@@ -13,6 +13,10 @@ function Search({ hideButtons = false }) {
   const [{}, dispatch] = useStateValue();
   const [input, setInput] = useState("");
   const navigate = useNavigate();
+
+  useEffect(() => {
+    document.getElementById("search-bar").focus();
+  }, []);
 
   const search = (e) => {
     e.preventDefault();
@@ -31,7 +35,11 @@ function Search({ hideButtons = false }) {
     <form className="search">
       <div className="search__input">
         <SearchIcon className="search__inputIcon" />
-        <input value={input} onChange={(e) => setInput(e.target.value)} />
+        <input
+          id="search-bar"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+        />
         <MicIcon />
         <ImageSearchIcon />
       </div>
