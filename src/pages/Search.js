@@ -6,6 +6,7 @@ import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { useStateValue } from "../StateProvide";
 import { actionTypes } from "../reducer";
+import ImageSearchIcon from "@mui/icons-material/ImageSearch";
 
 function Search({ hideButtons = false }) {
   // eslint-disable-next-line
@@ -32,6 +33,7 @@ function Search({ hideButtons = false }) {
         <SearchIcon className="search__inputIcon" />
         <input value={input} onChange={(e) => setInput(e.target.value)} />
         <MicIcon />
+        <ImageSearchIcon />
       </div>
       {!hideButtons ? (
         <div className="search__buttons">
