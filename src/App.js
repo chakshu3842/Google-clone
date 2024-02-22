@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 //import Search from "./pages/Search";
 import SearchPage from "./SearchPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+//import GoogleIcon from '@mui/icons-material/Google';
 
 function App() {
   return (
