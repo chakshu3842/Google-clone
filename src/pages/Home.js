@@ -31,7 +31,7 @@ function Home() {
       </div>
       <div className="upper__footer">India</div>
       <div className="home__footer">
-        <div className="home__footerLeft" style={{ padding: "15px" }}>
+        <div className="home__footerLeft" style={{ padding: "10px" }}>
           <a href="https://about.google/">About</a>
           <a href="https://ads.google.com/intl/en_IN/home/">Advertising</a>
           <a href="https://smallbusiness.withgoogle.com/#!/">Business</a>
@@ -39,7 +39,7 @@ function Home() {
             How search works
           </a>
         </div>
-        <div className="homefooterRight" style={{ padding: "15px" }}>
+        <div className="homefooterRight" style={{ padding: "10px" }}>
           <a href="https://policies.google.com/privacy?hl=en-IN&fg=1">
             Privacy
           </a>
